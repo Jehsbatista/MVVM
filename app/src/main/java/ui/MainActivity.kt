@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     fun setObserver() {
         viewModel.welcome().observe(this, Observer {
-            binding.textWelcome.text = it     //com it recebe o valor de welcome
+            binding.textWelcome.text = it
         })
         viewModel.login().observe(this, Observer {
             if (it == true) {
